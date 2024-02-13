@@ -1,0 +1,22 @@
+name: black check on push and PR
+#
+# Run the python formatting in check mode
+#
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  black-check:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout repo
+         id: checkout
+         uses: actions/checkout@v4
+       - name: Check format with black
+         id: black_format
+         uses: psf/black@stable
+         with:
+           options: "--check --verbose"
+           src: "./model"
+           version: "22.3.0"
