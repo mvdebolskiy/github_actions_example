@@ -26,4 +26,4 @@ jobs: # Groups together all the jobs that run in the learn-github-actions workfl
           if [ -f requirements.txt ]; then pip install -r requirements.txt --use-pep517; fi
       - name: Test with pytest
         run: |
-          pytest
+          python -m pytest
