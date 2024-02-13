@@ -36,9 +36,10 @@ Flake8 can also be added to your editor.
 
 You can find more information at [What is Flake8, and why should we use it?](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
 
-## Other useful tools:
+## Other useful tools/information:
 * [Black](https://black.readthedocs.io/en/stable/index.html): Python code formatter
 * [Isort](https://pycqa.github.io/isort/): Python library to sort imports alphabetically, and automatically separated into sections and by type.
+* [PEP 8](https://peps.python.org/pep-0008/): Style Guide for Python Code
 
 # Github Actions
 GitHub Actions is a continuous integration and continuous delivery platform that allows you to automate your 
