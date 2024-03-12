@@ -1,0 +1,11 @@
+#!/bin/env/bash 
+
+set -eo pipefail
+
+conda activate ghact
+
+black --check .
+
+echo "black passed"
+
+conda deactivate
