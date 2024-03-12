@@ -1,0 +1,10 @@
+#!/bin/env/bash
+
+set -eo pipefail
+
+source activate ghact
+
+
+pytest
+
+conda deactivate
