@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#set -eo pipefail
+
+
+source activate ghact
+
+flake8 model
+echo "flake8 passed!"
+
+
+black model --check
+black tests --check
+echo "black passed!"
+
