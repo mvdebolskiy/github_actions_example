@@ -8,6 +8,6 @@ def test_add_two_integers():
 
 def test_add_two_str():
     """Test will fail!"""
-    assert add_numbers.add_two_integers('3','4') == 7
+    assert add_numbers.add_two_integers("3", "4") == 7
     # with pytest.raises(TypeError, match="Only integers are allowed"):
     #     add_numbers.add_two_integers('3', '4')
